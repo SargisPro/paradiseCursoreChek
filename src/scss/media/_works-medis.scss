@@ -1,0 +1,26 @@
+@media (max-width: 1050px) {
+  .tabs {
+    &__header {
+      flex-direction: column;
+      &--masters {
+        flex-direction: row;
+      }
+    };
+    &__header-item {
+      width: 100%;
+      text-align: center;
+    };
+  };
+};
+
+
+@media (max-width: 500px) {
+  .tabs {
+    margin-top: 50px;
+    &__header {
+      &--masters {
+        flex-direction: column;
+      }
+    };
+  };
+};

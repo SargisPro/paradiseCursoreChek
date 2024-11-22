@@ -1,0 +1,36 @@
+.tabs {
+  margin-top: 50px;
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__header-item {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: var(--light-color);
+    border-bottom: 1px solid transparent;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+    &.active {
+      color: var(--hover-color);
+      border-bottom: 1px solid var(--hover-color);
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    &-item {
+      display: none;
+
+      &.active {
+        display: block;
+      };
+    };
+  };
+};
+

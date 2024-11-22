@@ -1,0 +1,77 @@
+.services {
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background: url('../img/services-bg.png') center center / cover no-repeat;
+  border-top: 1px solid var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    line-height: 120%;
+    color: var(--light-color);
+  };
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  };
+
+  &__item {
+    position: relative;
+    margin: 10px;
+    span {
+      display: block;
+      font-weight: 400;
+      margin-top: 20px;
+      font-size: 30px;
+      line-height: 120%;
+      color: var(--light-color);
+    };
+  };
+  &__img {
+    position: relative;
+    display: block;
+    padding: 4px;
+    border: 1px solid var(--hover-color);
+    border-radius: 8px;
+    width: 340px;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.06);
+    };
+
+    @include small-tablet {
+      width: 540px;
+      height: 400px;
+    };
+
+  };
+
+  .cooperation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__item {
+      margin: 15px;
+      svg {
+        width: 150px;
+        stroke: var(--light-color);
+        fill: var(--light-color);
+      };
+    };
+  };
+  .visible-hidden {
+    visibility: hidden;
+  };
+};
+

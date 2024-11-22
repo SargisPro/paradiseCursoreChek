@@ -1,0 +1,7 @@
+import './components/ex.js'
+import './components/tabs.js'
+import './components/modal.js'
+import './components/modal-img.js'
+import './components/sort-img.js'
+import './components/phone-mask.js'
+import './components/submit-forms.js'

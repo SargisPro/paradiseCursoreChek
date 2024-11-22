@@ -1,0 +1,20 @@
+@media (max-width: 650px) {
+  .contacts {
+    width: 400px;
+    &__title {
+      font-size: 22px;
+    }
+  };
+};
+
+@media (max-width: 450px) {
+  .contacts {
+    width: 300px !important;
+    &__title {
+      font-size: 19px;
+    }
+    &__click {
+      left: -123px;
+    };
+  };
+};

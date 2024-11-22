@@ -1,0 +1,61 @@
+.subheader {
+  padding: 200px 0;
+  margin: 20px;
+  border-radius: 10px;
+  z-index: -1;
+  background: url('../img/main-bg.jpeg') center center / cover no-repeat;
+  border-bottom: 1px solid var(--hover-color);
+
+  @include small-tablet {
+    background: url('../img/main-bg.jpeg') center left / cover no-repeat;
+  }
+
+  @include mobile {
+    margin: 10px;
+  }
+  &__container {
+    position: relative;
+  };
+  &__mause {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    svg {
+      width: 20px;
+      height: 30px;
+      fill: transparent;
+      stroke: var(--light-color);
+    };
+  };
+
+  &__descr {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--light-color);
+    margin-left: 20px;
+  };
+  &__title {
+    font-weight: 700;
+    font-size: 82px;
+    text-align: right;
+    line-height: 120%;
+    color: var(--light-color);
+    @include tablet {
+      font-size: 8vw;
+    }
+
+    @include mobile {
+      font-size: 12vw;
+      text-align: center;
+    };
+  };
+  span {
+    display: block;
+  };
+};
+
+

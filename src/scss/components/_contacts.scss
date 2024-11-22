@@ -1,0 +1,77 @@
+.contacts {
+  position: fixed;
+  width: 400px;
+  padding: 89px 25px 0 25px;
+  right: 0px;
+  top: -20px;
+  z-index: 15;
+  transition: right 0.3s ease-in-out;
+  height: 100%;
+  background-color: #161515;
+  border-left: 1px solid var(--hover-color);
+  border-radius: 10px;
+  margin: 20px 0;
+  &__cross {
+    position: absolute;
+    content: '';
+    top: 20px;
+    padding: 10px;
+    font-size: 45px;
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: var(--hover-color);
+      transition: color 0.3s ease-in-out;
+    };
+  };
+
+  &__click {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 150px;
+    left: -24px;
+    background-color: #161515;
+    border-radius: 8px;
+    transition: width 0.2s ease-in-out;
+    cursor: pointer;
+  };
+
+  &__width {
+    width: 30px;
+    transition: width 0.2s ease-in-out;
+  };
+  &__title {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--light-color);
+  };
+  &__caption {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 120%;
+    color: var(--light-color);
+    &:not(:last-child) {
+      margin-top: 30px;
+    };
+  };
+  &__item {
+    margin-top: 10px;
+    &--date {
+      color: var(--light-color);
+      font-size: 22px;
+      font-weight: 400;
+    };
+  };
+  &__link {
+    color: var(--light-color);
+    font-size: 22px;
+    font-weight: 400;
+  };
+};

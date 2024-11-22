@@ -1,0 +1,77 @@
+.form {
+  display: block;
+  max-width: 800px;
+  padding: 50px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  animation: modal-animation 0.3s ease-in-out;
+
+
+  &__label {
+    display: block;
+    font-size: 22px;
+    color: var(--light-color);
+  };
+
+  &__input {
+    width: 100%;
+    height: 46px;
+    padding-left: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: var(--light-color);
+    font-size: 22px;
+    border: 1px solid var(--light-color);
+    border-radius: 8px;
+    &::placeholder {
+      font-size: 20px;
+      color: var(--light-color);
+    };
+    &--textarea {
+      padding-top: 10px;
+      margin-bottom: 40px;
+      height: 150px;
+      resize: none;
+    };
+  };
+
+  &__btn {
+    display: block;
+    color: var(--light-color);
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--light-color);
+    border-radius: 8px;
+  };
+
+  @keyframes modal-animation {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  };
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    &:focus {
+      outline: none;
+      border-color: var(--hover-color);
+    };
+  };
+};

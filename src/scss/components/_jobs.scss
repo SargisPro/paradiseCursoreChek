@@ -1,0 +1,43 @@
+.job {
+  padding-top: 130px;
+  .form {
+    margin-top: 50px;
+  };
+
+  &__subtitle {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align-last: left;
+    color: var(--hover-color);
+  };
+};
+
+
+
+.masters {
+  padding-top: 120px;
+  &__descr {
+    width: 700px;
+    font-size: 22px;
+    color: var(--light-color);
+  };
+};
+
+.price {
+  p {
+    margin-right: 0;
+  }
+  &__reverse {
+    flex-direction: row-reverse;
+    p, ul {
+      margin-left: 0;
+      margin-right: 50px;
+    };
+    ul {
+      margin-right: 50px;
+    };
+  };
+  img {
+    width: 689px;
+  }
+};

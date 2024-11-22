@@ -1,0 +1,11 @@
+:root {
+  --font-family: "Cormorant Garamond", serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --light-color: #fff;
+  --main-bg-color: #111111;
+  --hover-color: #cdaa7d;
+  --opacity-color: #000000d4;
+};

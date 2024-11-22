@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/services/cosmetology-services.html')
+      @include('partials/services.html')
+      @include('partials/modal.html')
+      <svg class="up-arrow">
+        <use xlink:href="./img/sprite.svg#upArrow"></use>
+      </svg>
+      <div class="wrapper-loaded">
+        <span class="loader"></span>
+      </div>
+
+      <div class="sucsses">
+        <div class="sucsses__body">
+          <h2>Cпасибо за заявку</h2>
+          <h3>С вами свяжуться в ближайщее время</h3>
+        </div>
+      </div>
+
+      <div class="sucsses-error">
+        <div class="sucsses-error__body">
+          <h2>Что-то пошло не так !</h2>
+          <h3>Попробуйте еще раз</h3>
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

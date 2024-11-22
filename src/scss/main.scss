@@ -1,0 +1,42 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/subheader";
+@import "./components/contacts";
+@import "./components/about";
+@import "./components/services";
+@import "./components/form";
+@import "./components/request-section";
+@import "./components/work";
+@import "./components/footer";
+@import "./components/social";
+@import "./components/jobs";
+@import "./components/map";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/modal-img";
+@import "./components/loaded";
+
+// Стили услуг
+@import "./price-services/price";
+
+
+
+// media
+@import "./media/contacts-media";
+@import "./media/header-media";
+@import "./media/nav-media";
+@import "./media/social-media";
+@import "./media/subheader-media";
+@import "./media/services-media";
+@import "./media/footer-media";
+@import "./media/services-price/price-media";
+@import "./media/works-medis";
+@import "./media/modal-media";

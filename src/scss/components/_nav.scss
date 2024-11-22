@@ -1,0 +1,35 @@
+.nav {
+    @include flex-all-sb;
+  &__list {
+    width: 50%;
+    overflow-y: auto;
+    @include flex-all-sb;
+  };
+
+  &__item {
+    &--social {
+      display: none;
+    }
+  };
+
+
+  &__link {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: var(--light-color);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    padding-top: 3px;
+    &:hover {
+      color: var(--hover-color);
+      border-bottom: 1px solid var(--hover-color);
+      transition: border-bottom 0.3s ease-in-out;
+    };
+  };
+  .logo {
+    width: 220px;
+  };
+
+
+};

@@ -1,0 +1,26 @@
+.work {
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-top: 1px solid var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+  .nav {
+    &__list {
+      &-work {
+        max-width: 800px;
+        margin: 50px auto 0;
+      };
+    };
+  };
+  .services {
+    &__list {
+      &-work {
+        margin-top: 50px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+};
